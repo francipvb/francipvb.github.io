@@ -17,7 +17,7 @@ Open the local address printed by Jekyll. To build without starting a server, ru
 
 - Update the introduction in `index.md` and the page metadata in each file's front matter.
 - Update `resume.md` with your profile, experience, skills, and education. Markdown headings, lists, and links become accessible HTML. Do not publish information you do not want to make public.
-- Add project descriptions and real repository links to `projects.md`. The initial text is a placeholder, not a fictional project.
+- Add or update project descriptions and repository links in `projects.md`.
 - Update your email, GitHub, and LinkedIn links in `contact.md` if they change.
 - If you want to offer a PDF résumé, add a PDF you have chosen to publish under `assets/` and add a descriptive link to it in `resume.md`, for example:
 

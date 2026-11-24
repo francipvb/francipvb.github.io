@@ -8,4 +8,14 @@ permalink: /projects/
 
 # Projects
 
-Project details are being prepared. This page will feature selected work and links to public repositories when they are available.
+## py-optional
+
+A Python library for representing optional values, with support for checking whether a value is present or absent.
+
+[View py-optional on GitHub](https://github.com/francipvb/py-optional) · [Read the py-optional documentation](https://francipvb.github.io/py-optional/)
+
+## audible-plot
+
+A Python library for rendering data as audio.
+
+[View audible-plot on GitHub](https://github.com/francipvb/audible-plot)
