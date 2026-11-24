@@ -1,0 +1,21 @@
+title: Francisco Del Roio
+description: Personal website of Francisco Del Roio, focused on backend development, APIs, and microservices.
+url: "https://francipvb.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor

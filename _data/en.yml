@@ -1,0 +1,14 @@
+skip_to_content: Skip to content
+navigation_label: Main navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Résumé
+    url: /resume/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+footer: Built with Jekyll.

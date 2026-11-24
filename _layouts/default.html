@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | escape }}">
+  {% assign locale = page.lang | default: site.lang %}
+  {% assign text = site.data[locale] %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{{ text.skip_to_content }}</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <nav aria-label="{{ text.navigation_label }}">
+          <ul class="navigation">
+            {% for item in text.navigation %}
+              <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="shell main-content" tabindex="-1">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>{{ site.title | escape }}</span>
+        <span>{{ text.footer }}</span>
+      </div>
+    </footer>
+  </body>
+</html>
